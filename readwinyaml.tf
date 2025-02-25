@@ -1,6 +1,6 @@
 locals{
  windows_app = flatten([
-    for winf in fileset("${path.module}/winconfigs", "*.yaml") : yamldecode(file("${path.module}/winconfigs/${winf}")["windows_apps"])
+    for winf in fileset("${path.module}/winconfigs", "*.yaml") : yamldecode(file("${path.module}/winconfigs/${winf}"))
   windows_app_list = flatten([
     for app in local.windows_app : [
       for windowsapps in try(app.windows_apps, []) :{
