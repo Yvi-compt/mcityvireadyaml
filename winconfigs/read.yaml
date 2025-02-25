@@ -1,3 +1,11 @@
-name: windows-app-1
-    location: East US
-    sku: B1
+windows_apps:
+  - name: "windows-app-1"
+    os_type: "Windows"
+    sku_name: "B1"
+    - name: "windows-app-2"
+    os_type: "Windows"
+    sku_name: "P1v2"
+    - name: "windows-app-3"
+    os_type: "Windows"
+    sku_name: "S1"
+   
