@@ -27,7 +27,7 @@ locals{
 
 
 resource "azurerm_service_plan" "batcha07sp" {
-  for_each            ={for winsp in local.windows_app_list: "${winsp.name}"=>sp }
+  for_each            ={for winsp in local.windows_app_list: "${winsp.name}"=>winsp }
   name                = each.value.name
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
   location            = azurerm_resource_group.azureresourcegroup.location
