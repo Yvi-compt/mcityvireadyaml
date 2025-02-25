@@ -1,7 +1,7 @@
 windows_apps:
   - name: "windows-app-1"
     os_type: "Windows"
-    sku_name: "B1"
+    sku_name: "P1v2"
     location: "East US"
   - name: "windows-app-2"
     os_type: "Windows"
