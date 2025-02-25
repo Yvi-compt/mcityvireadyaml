@@ -36,7 +36,7 @@ resource "azurerm_service_plan" "batcha07sp" {
 }
 
 resource "azurerm_windows_web_app" "batcha07webapp" {
-  for_each            = azurerm_service_plan.batcha06sp
+  for_each            = azurerm_service_plan.batcha07sp
   name                = each.value.name
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
   location            = azurerm_resource_group.azureresourcegroup.location
